@@ -1,8 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .home{
   background-image: url(../public/images/home.jpg);
   background-size: cover;
 }
+
+.abtpic{
+background-image: url(../public/images/abt.jpg);
+background-size: cover;
+}
+
+.abt_book{
+  background-image: url(../public/images/abtbk.jpg);
+  background-size: cover;
+  }
+
+  
+.experts{
+  background-image: url(../public/images/expert.jpg);
+  background-size: cover;
+  }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -25,13 +26,13 @@ export default function Home() {
             <Link href={<Home/>}>
             HOME
             </Link> <br/>
-            <Link href={<Home/>}>
+            <Link href="/about">
             ABOUT AUTHOR
             </Link><br/>
-            <Link href={<Home/>}>
+            <Link href="/about_book">
             ABOUT BOOK
             </Link><br/>
-            <Link href={<Home/>}>
+            <Link href="/experts">
             EXPERTS SPEAK
             </Link><br/>
             <Link href={<Home/>}>
