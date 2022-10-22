@@ -46,10 +46,10 @@ export default function preview() {
           </div>
         </div>
         <div className="p-5 pt-0 px-10  font-bold shadow-xl text-orange-200 text-xl">
-          Foolproof Strategies to Safeguard Your{" "}
+          Foolproof Strategies to Safeguard Your
           <span className="text-white">INNOVATIONS</span>, Build Credibility,
           Improve <br />
-          Branding and Increase Profits by{" "}
+          Branding and Increase Profits by
           <span className="text-white">PATENTING</span> Intellectual Property
           Azetz
         </div>
