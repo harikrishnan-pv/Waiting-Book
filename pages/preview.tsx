@@ -1,13 +1,13 @@
 export default function preview() {
   return (
     <div>
-      <div className=" bg-gray-300 home p-10 h-screen w-screen ">
-        <div className="text-6xl font-bold text-center text-orange-200">
+      <div className=" bg-gray-300 preview p-5 h-screen w-screen ">
+        <div className="text-3xl font-bold text-center text-orange-200">
           <span className="text-white">Inno</span> Waiting?
         </div>
         <div className="grid grid-cols-3">
-          <div className="p-5 px-10 pr-32 font-bold text-white text-2xl">
-            <div className="text-5xl text-orange-200 ">
+          <div className="p-5 px-5 pr-32 font-bold text-white text-lg">
+            <div className="text-2xl text-orange-200 ">
               Key Topics and Concepts in the Chapters
             </div>
             <br />
@@ -22,7 +22,7 @@ export default function preview() {
             CHAPTER 3: UNDERSTANDING THE ART OF PATENTING
           </div>
           <div></div>
-          <div className="p-5 px-10 pl-36 font-bold text-white text-2xl">
+          <div className="p-5 pb-0 px-10 pl-24 font-bold text-white text-lg">
             CHAPTER 4: BUILDING AN INNOVATION CULTURE
             <br />
             <br />
@@ -45,7 +45,7 @@ export default function preview() {
             CHAPTER 10: GLOBAL PERSPECTIVE (EXPERTS SPEAK)
           </div>
         </div>
-        <div className="p-5 px-10  font-bold text-orange-200 text-2xl">
+        <div className="p-5 pt-0 px-10  font-bold shadow-xl text-orange-200 text-xl">
           Foolproof Strategies to Safeguard Your{" "}
           <span className="text-white">INNOVATIONS</span>, Build Credibility,
           Improve <br />

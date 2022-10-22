@@ -17,7 +17,10 @@ background-size: cover;
   background-size: cover;
   }
 
-  
+  .preview{
+    background-image: url(../public/images/preview.jpg);
+    background-size: cover;
+    }
 .experts{
   background-image: url(../public/images/expert.jpg);
   background-size: cover;
