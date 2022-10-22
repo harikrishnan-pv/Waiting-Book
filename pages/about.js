@@ -4,8 +4,8 @@ export default function About() {
   return (
     <div>
       <div className="about bg-neutral-800 p-20 grid grid-cols-4 w-screen h-screen">
-        <div className="col-span-3 px-20 text-justify text-2xl text-white ">
-          <div className="text-5xl mt-20">
+        <div className="col-span-3 px-20 text-justify text-xl text-white ">
+          <div className="text-3xl mt-20">
             About the Author: <br />
           </div>
           

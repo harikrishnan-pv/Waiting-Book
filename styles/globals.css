@@ -22,3 +22,7 @@ background-size: cover;
   background-image: url(../public/images/expert.jpg);
   background-size: cover;
   }
+  *{
+    font-family: 'Calistoga', cursive;
+
+  }

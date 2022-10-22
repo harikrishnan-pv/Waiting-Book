@@ -4,9 +4,9 @@ export default function Book() {
   return (
     <div>
       <div className="about bg-gray-300 p-20  w-screen ">
-        <div className="w-full h-screen abt_book"></div>
+      <img src="/images/abtbk.jpg" width='100%' height={'100%'}/>
 
-        <div className="text-justify mt-10 text-3xl">
+        <div className="text-justify mt-10 text-2xl">
           About the book: In this book, the Author (Manoj Radhakrishnan) shares
           With you the fool proof method to build credibility and improve
           branding with your Intellectual property (IP) assets if you are an
