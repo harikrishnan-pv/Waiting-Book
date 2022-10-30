@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 .home{
-  background-image: url(../public/images/home.jpg);
+  background-image: url(../public/images/home.png);
+  background-size: cover;
+}
+.about{
+  background-image: url(../public/images/abt.png);
   background-size: cover;
 }
 
 .abtpic{
-background-image: url(../public/images/abt.jpg);
+background-image: url(../public/images/abt.png);
 background-size: cover;
 }
 
@@ -18,14 +22,35 @@ background-size: cover;
   }
 
   .preview{
-    background-image: url(../public/images/preview.jpg);
+    background-image: url(../public/images/chapters.jpg.png);
     background-size: cover;
     }
 .experts{
-  background-image: url(../public/images/expert.jpg);
+  background-image: url(../public/images/experts.jpg);
   background-size: cover;
   }
-  *{
-    font-family: 'Calistoga', cursive;
 
+
+  @layer base{
+    @font-face {
+      font-family: "font";
+      font-weight: 700;
+      src: url('../public/font/font.woff2')format('woff2');
+    }
+    @font-face {
+      font-family: "cooper";
+      font-weight: 700;
+      src: url('../public/font/cooper.woff2')format("woff2");
+    }
+  }
+  *{
+    font-family: "font",normal;
+  }
+
+  .title{
+    font-family: "cooper",normal;
+  }
+  .form{
+    background-image: url(../public/images/maple.jpg);
+    background-size: cover;
   }

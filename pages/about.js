@@ -4,43 +4,22 @@ export default function About() {
   return (
     <div>
       <div className="about bg-neutral-800 p-20 grid grid-cols-4 w-screen h-screen">
-        <div className="col-span-3 px-20 text-justify text-xl text-white ">
-          <div className="text-3xl mt-20">
-            About the Author: <br />
-          </div>
-          
-          <br />
-          <br />
-          
-          <div className="text-yellow-100">
-          <b className="text-white">Manoj Radhakrishnan </b>is an Indian patent agent and an
-          electronics and communication Engineer. He is a certified IPR
-          professional from the National Law School of India University. He owns
-          extensive experience in patent examination, patent development, patent
-          prosecution, and patent portfolio management. 
-          <br />
-          <br />
-          <br />
-           Once a patent
-          examiner in the Indian Patent Office, he has worked in different
-          capacities such as technical consultant, patent professional, and
-          patent portfolio manager in various organizations and multinational
-          companies. 
-          <br />
-          <br />
-          <br />
-          During his 25-year work career, he has been certified by various
-          international institutes and companies. He is very passionate about
-          promoting IPR awareness and education. Apart from speaking in industry
-          seminars and conferences, he is passionate about conducting training
-          programs and workshops for inventors and aspiring patent agents, and
-          also coordinates i ndustry-led training programs for intellectual
-          property offices.
-          </div>
-        </div>
-        <div className="abtpic shadow-2xl">
-
-        </div>
+      <a href="/">
+        <svg
+          className="w-10 hover:text-orange-300 text-white fixed z-100 top-5 left-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          ></path>
+        </svg>
+      </a>
       </div>
     </div>
   );
