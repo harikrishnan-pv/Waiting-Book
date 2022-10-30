@@ -25,8 +25,8 @@ background-size: cover;
     background-image: url(../public/images/chapters.jpg.png);
     background-size: cover;
     }
-.experts{
-  background-image: url(../public/images/experts.jpg);
+.expert{
+  background-image: url(../public/images/bg.png);
   background-size: cover;
   }
 

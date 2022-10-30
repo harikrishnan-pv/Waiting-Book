@@ -1,6 +1,7 @@
+import Link from "next/link";
 import { useState } from "react";
 
-export default function preview() {
+export default function Preview() {
   const [hov, sethov] = useState(false);
   const [chap1, setchap1] = useState(false);
   const [chap2, setchap2] = useState(false);
@@ -15,7 +16,7 @@ export default function preview() {
   return (
     <div>
       <div className=" bg-gray-300 preview p-10 h-screen w-screen ">
-      <a href="/">
+      <Link href="/">
         <svg
           className="w-10 hover:text-orange-300 text-white fixed z-100 top-5 left-5"
           fill="none"
@@ -30,7 +31,7 @@ export default function preview() {
             d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
           ></path>
         </svg>
-      </a>
+      </Link>
         <div className="flex text-4xl items-center align-middle justify-center">
           <div className=" flex pr-4 title text-center text-white">Inno</div>
 
