@@ -5,15 +5,14 @@ export default function Home() {
     <div>
       <div className="home w-screen h-screen">
         
-        <div className="h-1/6 py-32 text-6xl text-left pt-4 text-white font-bold">
+        <div className="py-28 text-6xl text-left pt-4 text-white font-bold">
         </div>
-        <div className="grid h-4/6 grid-cols-4">
+        <div className="grid h-4/6 grid-cols-3">
           <div className="flex ">
             
           </div>
           <div></div>
-          <div></div>
-          <div className="px-5 text-white my-auto font-bold font-serif text-xl">
+            <div className="px-10 text-white my-auto font-bold font-serif text-xl">
             <Link href={<Home />}>HOME</Link>
             <br />
             <p className="p-2"></p>
