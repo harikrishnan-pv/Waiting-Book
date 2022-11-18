@@ -45,7 +45,7 @@ export default function About() {
           about conducting training programs and workshops for inventors and
           aspiring patent agents, and also coordinates industry-led training
           programs for intellectual property offices. In addition to that now he
-          is an author of the book "Inno Waiting ?"
+          is an author of the book 	&quot;Inno Waiting ?&quot;
         </div>
         <Link href="/">
           <svg
