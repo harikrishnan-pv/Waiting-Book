@@ -41,16 +41,33 @@ background-size: cover;
       font-family: "cooper";
       font-weight: 700;
       src: url('../public/font/cooper.woff2')format("woff2");
+    }@font-face {
+      font-family: "title";
+      font-weight: 700;
+      src: url('../public/font/title.woff2')format("woff2");
     }
   }
   *{
     font-family: "font",normal;
+    margin: 0;
+    padding: 0;
   }
 
   .title{
     font-family: "cooper",normal;
   }
+  .name{
+    font-family: "title",normal;
+
+  }
   .form{
     background-image: url(../public/images/maple.jpg);
     background-size: cover;
+  }
+
+  .small-home{
+    background-image: url(../public/images/mob-home.png);
+    
+    background-size: cover;
+
   }

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState } from "react";
+import Accordion2 from "./components/Accordion";
 
 export default function Preview() {
   const [hov, sethov] = useState(false);
@@ -15,23 +16,19 @@ export default function Preview() {
   const [chap10, setchap10] = useState(false);
   return (
     <div>
-      <div className=" bg-gray-300 preview  h-screen w-screen ">
-        <Link href="/">
-          <svg
-            className="w-10 hover:text-orange-300 text-white fixed z-100 top-5 left-5"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-            ></path>
-          </svg>
-        </Link>
+      <div className="lg:hidden bg-gray-700">
+        <div className="p-10 text-3xl grid grid-cols-1 justify-items-center text-center">
+          <div className=" flex pr-4 title text-center text-white">Inno</div>
+
+          <div className="flex title text-center text-orange-200">Waiting?</div>
+          <div className="text-xl mt-10 underline text-orange-200 ">
+            Key Topics and Concepts in the Chapters
+          </div>
+          <br />
+          <Accordion2 />
+        </div>
+      </div>
+      <div className=" bg-gray-300 preview hidden lg:block  h-screen w-screen ">
         <div className="flex text-3xl h-1/6 items-center p-5 align-middle justify-center">
           <div className=" flex pr-4 title text-center text-white">Inno</div>
 
@@ -96,25 +93,20 @@ export default function Preview() {
                   </div>
                   <br />
                   <ul className="list-disc p-5">
+                    <li>Everything Starts With a Problem</li>
+                    <li>Patent Protection: A Reward for Your Hard Work</li>
                     <li>
-                      Everything Starts With a Problem
-                      <li>Patent Protection: A Reward for Your Hard Work</li>
-                      <li>
-                        Trademark: A Tool to Identify Your Product or Service
-                      </li>
-                      <li>
-                        Design Protection: Stop Copycats From Stealing Your
-                        Design
-                      </li>
-                      <li>
-                        Trade Secret: Do You Want to Keep Your Idea Secret?
-                      </li>
-                      <li>
-                        Copyright and Domain names: Is that Something for You?
-                      </li>
-                      <li>Which Protection? The Decision is Yours</li>
-                      <li>The Value that IP Rights Bring</li>
+                      Trademark: A Tool to Identify Your Product or Service
                     </li>
+                    <li>
+                      Design Protection: Stop Copycats From Stealing Your Design
+                    </li>
+                    <li>Trade Secret: Do You Want to Keep Your Idea Secret?</li>
+                    <li>
+                      Copyright and Domain names: Is that Something for You?
+                    </li>
+                    <li>Which Protection? The Decision is Yours</li>
+                    <li>The Value that IP Rights Bring</li>
                   </ul>
                 </div>
               )}
@@ -125,21 +117,17 @@ export default function Preview() {
                   </div>
                   <br />
                   <ul className="list-disc p-5">
-                    <li>
-                      Risks Associated with IP
-                      <li>The Power of IP Rights</li>
-                      <li>Don’t Miss a Business Opportunity</li>
-                      <li>Exploit Your IP Without Delay</li>
-                      <li>Regular Assessments for Your IP</li>
-                      <li>
-                        Other Alternatives for Safeguarding Your Innovation
-                      </li>
-                      <li>Where to Protect</li>
-                      <li>The Scope of Protection</li>
-                      <li>The Value of Protection</li>
-                      <li>The Cost of Protection</li>
-                      <li>Preparations for Protection</li>
-                    </li>
+                    <li>Risks Associated with IP</li>
+                    <li>The Power of IP Rights</li>
+                    <li>Don’t Miss a Business Opportunity</li>
+                    <li>Exploit Your IP Without Delay</li>
+                    <li>Regular Assessments for Your IP</li>
+                    <li>Other Alternatives for Safeguarding Your Innovation</li>
+                    <li>Where to Protect</li>
+                    <li>The Scope of Protection</li>
+                    <li>The Value of Protection</li>
+                    <li>The Cost of Protection</li>
+                    <li>Preparations for Protection</li>
                   </ul>
                 </div>
               )}
@@ -150,20 +138,16 @@ export default function Preview() {
                   </div>
                   <br />
                   <ul className="list-disc p-5">
-                    <li>
-                      Some Perceptions Around Inventions
-                      <li>The Life Cycle of an Invention</li>
-                      <li>Patenting a Product</li>
-                      <li>Patenting a Process</li>
-                      <li>Patenting a Use</li>
-                      <li>Improvement Patent</li>
-                      <li>Patenting Software Specific Process</li>
-                      <li>How Long Should Your Invention be Protected?</li>
-                      <li>
-                        Single or Multiple Applications for Your Invention?
-                      </li>
-                      <li>What to Disclose in a Patent Application?</li>
-                    </li>
+                    <li>Some Perceptions Around Inventions</li>
+                    <li>The Life Cycle of an Invention</li>
+                    <li>Patenting a Product</li>
+                    <li>Patenting a Process</li>
+                    <li>Patenting a Use</li>
+                    <li>Improvement Patent</li>
+                    <li>Patenting Software Specific Process</li>
+                    <li>How Long Should Your Invention be Protected?</li>
+                    <li>Single or Multiple Applications for Your Invention?</li>
+                    <li>What to Disclose in a Patent Application?</li>
                   </ul>
                 </div>
               )}
@@ -365,6 +349,22 @@ export default function Preview() {
           Assets
         </div>
       </div>
+      <Link href="/">
+        <svg
+          className="w-10 hover:text-orange-300 text-white fixed z-100 top-5 left-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+          ></path>
+        </svg>
+      </Link>
     </div>
   );
 }
