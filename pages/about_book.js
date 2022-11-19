@@ -16,13 +16,13 @@ export default function Book() {
             objectFit="contain"
           />
         </div>
-        <div className="p-5 text-justify">
+        <div className="p-5 text-gray-800 text-justify">
           <p className="text-2xl">
           About the book:
           </p>
           <br />
           <br />
-          In this book, the Author <em>(Manoj Radhakrishnan) </em>  shares with you the
+          In this book, the Author <span className="text-black text-lg bold">(Manoj Radhakrishnan)</span>  shares with you the
           fool proof method to build credibility and improve branding with your
           Intellectual property (IP) assets if you are an individual
           inventor/innovator or a person running a business around your
@@ -30,7 +30,7 @@ export default function Book() {
           running a start-up. He shows how sustainable and successful business
           can be run by protecting innovation using patents. Innovators and
           businesses usually think of providing innovative products and services
-          to their customers but ignore or underrate the value Of protecting
+          to their customers but ignore or underrate the value of protecting
           their core IP assets associated with it. Here the author explains how
           we can identify our IP assets and make the best use of it. He shares
           the key steps and strategies involved in the timely protection of
@@ -38,15 +38,15 @@ export default function Book() {
           done with it to be successful. In Inno Waiting? you will learn about
           different intellectual property rights that can be associated with a
           successful business. The book provides strategies to harvest technical
-          innovations and wilt take you through some key patenting processes to
+          innovations and will take you through some key patenting processes to
           protect them. Approaches you can adopt for stronger, broader, timely
           patent protection are also discussed. You will get insights on how to
           brand your business with patents and grow it by developing a patent
           portfolio. The book also reveals different proven ways of exploiting
           your patent rights to make a profit. The book also includes views and
           insights of patent practitioners across the globe which will provide
-          us with a very broad understanding and a globat perspective on Patent
-          protection. The book wilt undoubtedly give the required confidence to
+          us with a very broad understanding and a global perspective on Patent
+          protection. The book will undoubtedly give the required confidence to
           scale your business to a global platform without any fear and with the
           reassurance of a strong patent protection.
         </div>

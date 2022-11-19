@@ -45,6 +45,14 @@ background-size: cover;
       font-family: "title";
       font-weight: 700;
       src: url('../public/font/title.woff2')format("woff2");
+    }@font-face {
+      font-family: "brad";
+      font-weight: 700;
+      src: url('../public/font/brad.woff2')format("woff2");
+    }@font-face {
+      font-family: "bold";
+      font-weight: 700;
+      src: url('../public/font/bold.woff2')format("woff2");
     }
   }
   *{
@@ -52,7 +60,13 @@ background-size: cover;
     margin: 0;
     padding: 0;
   }
-
+  .brad{
+    font-family: "brad",normal;
+  
+  }.bold{
+    font-family: "bold",normal;
+  
+  }
   .title{
     font-family: "cooper",normal;
   }

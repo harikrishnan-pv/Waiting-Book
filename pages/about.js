@@ -14,10 +14,10 @@ export default function About() {
           />
         </div>
 
-        <div className="p-6 text-[#e4e1cf] text-justify">
+        <div className="p-3 text-[#e4e1cf] text-justify">
           About the Author:
           <br />
-          <span className="text-white"> <em>Manoj Radhakrishnan</em></span> is an Indian Patent Agent and an
+          <span className="text-white "> <em>Manoj Radhakrishnan</em></span> is an Indian Patent Agent and an
           electronics and communication Engineer. He has a post graduate diploma
           in IPR law from the National Law School of India University,
           Bangalore. He owns extensive experience in patent examination, patent
@@ -29,15 +29,15 @@ export default function About() {
           work career, he has been certified by various international
           institutes. He is a Patent Information specialist and holds a Diploma
           from GO Opleidingen Institute of Netherlands. He also holds an
-          additional PG Diploma in Patents & IP laws, processes & services (IAS
+          additional PG Diploma in Patents & IP laws, processes & services (US
           & India) from Global Institute of Intellectual Property (GIIP) New
           Delhi. He is also certified in European patent laws and practices by
           Delta Patents Institute of Netherlands and European Patent Institute
           (EPI) Munich, Germany. He is also certified by various companies and
           organizations (Microsoft, IBM, World Intellectual Property
-          Organization (WI PO) & Dale Carnegie Institute). In his career, he got
+          Organization (WIPO) & Dale Carnegie Institute). In his career, he got
           opportunities to work with other companies like Time Technologies
-          (Computer Networking), Delta Innovative Enterpris- es (VSAT
+          (Computer Networking), Delta Innovative Enterprises (VSAT
           communication & networking), Foxmandat Little & Associates (Private
           Law firm) and IP departments of MNCs like Siemens & Ericsson. He is
           very passionate about promoting IPR awareness and education. Apart
