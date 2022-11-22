@@ -1,33 +1,32 @@
-import axios from "axios";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import $ from 'jquery';
+
 
 export default function Form() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
 
-  function handleSubmit(event) {
-    const state = {
-      name: name,
-      email: email,
-      message: message,
-    };
-    console.log(state);
-    event.preventDefault();
-    axios
-      .post(
-        "https://script.google.com/macros/s/AKfycbyvd-Gz6VzQ6CL9UjBBvAHvUfLfO4QEiRRh1A9v-X93rb2Qq-pByvnHxzgXrjuirLsIxg/exec/",
-        state
-      )
-      .then((response) => {
-        console.log(response);
-        this.setState({ message: "User created successfuly." });
+  
+  useEffect(() => {
+    $("#submit-form").submit((e)=>{
+      e.preventDefault()
+      $.ajax({
+          url:"https://script.google.com/macros/s/AKfycby8c5sP62kNmhpqfhDRiJ_SSL_gN3KpZJpOtQd6nfJkdHPxhagmm-p5hDy5OZgJrCs71g/exec",
+          data:$("#submit-form").serialize(),
+          method:"post",
+          success:function (response){
+              alert("Form submitted successfully")
+              window.location.reload()
+          },
+          error:function (err){
+            window.location.reload()
+  
+          }
       })
-      .catch((error) => {
-        console.log(error);
-      });
-  }
+  })
+  }, []);
 
   return (
     <div className="flex min-h-full h-screen w-screen form items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
@@ -49,7 +48,7 @@ export default function Form() {
       </Link>
       <div className="w-full backdrop-blur-sm p-20 rounded-3xl shadow-5xl bg-black/30 max-w-md space-y-8">
         <div className="text-4xl text-center text-amber-500">Contact Us</div>
-        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
+        <form id="submit-form" className="mt-8 space-y-6">
           <input type="hidden" name="remember" defaultValue="true" />
           <div className="-space-y-px rounded-md shadow-sm">
             <div>
@@ -120,3 +119,5 @@ export default function Form() {
     </div>
   );
 }
+
+
