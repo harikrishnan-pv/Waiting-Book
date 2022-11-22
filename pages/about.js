@@ -49,7 +49,7 @@ export default function About() {
           <br />
           In his career, he got opportunities to work with other companies like
           Time Technologies (Computer Networking), Delta Innovative Enterprises
-          (VSAT communication & networking), Foxmandat Little & Associates
+          (VSAT communication & networking), Foxmandal Little & Associates
           (Private Law firm) and IP departments of MNCs like Siemens & Ericsson.
           <br />
           <br />
