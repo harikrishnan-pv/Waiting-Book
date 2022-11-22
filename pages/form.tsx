@@ -2,7 +2,7 @@ import axios from "axios";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function form() {
+export default function Form() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
