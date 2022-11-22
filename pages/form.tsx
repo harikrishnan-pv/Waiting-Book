@@ -1,6 +1,34 @@
+import axios from "axios";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function form() {
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+
+  function handleSubmit(event) {
+    const state = {
+      name: name,
+      email: email,
+      message: message,
+    };
+    console.log(state);
+    event.preventDefault();
+    axios
+      .post(
+        "https://script.google.com/macros/s/AKfycbyvd-Gz6VzQ6CL9UjBBvAHvUfLfO4QEiRRh1A9v-X93rb2Qq-pByvnHxzgXrjuirLsIxg/exec/",
+        state
+      )
+      .then((response) => {
+        console.log(response);
+        this.setState({ message: "User created successfuly." });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
   return (
     <div className="flex min-h-full h-screen w-screen form items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <Link href="/">
@@ -21,7 +49,7 @@ export default function form() {
       </Link>
       <div className="w-full backdrop-blur-sm p-20 rounded-3xl shadow-5xl bg-black/30 max-w-md space-y-8">
         <div className="text-4xl text-center text-amber-500">Contact Us</div>
-        <form id="gform" className="mt-8 space-y-6" action="">
+        <form onSubmit={handleSubmit} className="mt-8 space-y-6">
           <input type="hidden" name="remember" defaultValue="true" />
           <div className="-space-y-px rounded-md shadow-sm">
             <div>
@@ -32,6 +60,10 @@ export default function form() {
                 id="name"
                 name="name"
                 type="name"
+                value={name}
+                onChange={(value) => {
+                  setName(value.target.value);
+                }}
                 autoComplete="name"
                 required
                 className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-amber-500 focus:outline-none focus:ring-amber-500 sm:text-sm"
@@ -47,6 +79,10 @@ export default function form() {
                 name="email"
                 type="email"
                 autoComplete="email"
+                value={email}
+                onChange={(value) => {
+                  setEmail(value.target.value);
+                }}
                 required
                 className="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-amber-500 focus:outline-none focus:ring-amber-500 sm:text-sm"
                 placeholder="Email address"
@@ -59,6 +95,10 @@ export default function form() {
               <textarea
                 id="message"
                 name="message"
+                value={message}
+                onChange={(value) => {
+                  setMessage(value.target.value);
+                }}
                 rows={3}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-amber-500 focus:ring-amber-500 sm:text-sm"
                 placeholder="Type your message"

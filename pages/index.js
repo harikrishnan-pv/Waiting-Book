@@ -24,7 +24,7 @@ export default function Home() {
         </div>
         <br />
         <br />
-        <div className="p-5 max-w-md text-center text-xl brad">
+        <div className="p-5 max-w-md text-white text-center text-xl brad">
           “Welcome ! and thanks for visiting. <br /> <br /> Are you an
           individual inventor/innovator or a person running a business around
           your innovation or an aspiring entrepreneur or one who is running a
@@ -35,7 +35,7 @@ export default function Home() {
         </div>
         <br />
 
-        <div className="grid gap-4 text-gray-900 p-10 mb-5 justify-evenly backdrop-blur-md  rounded-xl grid-cols-2">
+        <div className="grid gap-4 text-white p-10 mb-5 justify-evenly backdrop-blur-md  rounded-xl grid-cols-2">
           <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
             <Link href="/about">ABOUT AUTHOR</Link>
           </div>

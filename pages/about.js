@@ -14,7 +14,7 @@ export default function About() {
           />
         </div>
 
-        <div className="p-3 text-[#e4e1cf] text-justify">
+        <div className="p-3 text-sm px-6 text-[#e4e1cf] text-justify">
           About the Author:
           <br />
           <br />
