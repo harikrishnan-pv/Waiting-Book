@@ -76,16 +76,7 @@ export default function Experts() {
               objectFit="contain"
             />
           </div>{" "}
-          <div>
-            <Image
-              src="/images/experts7.jpg"
-              className="w-screen "
-              width="100%"
-              height="100%"
-              layout="responsive"
-              objectFit="contain"
-            />
-          </div>
+         
           <Link href="/">
             <svg
               className="w-10 hover:text-white text-gray-600 fixed z-100 top-5 left-5"
