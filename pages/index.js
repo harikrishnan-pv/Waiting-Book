@@ -49,7 +49,10 @@ export default function Home() {
             <Link href="/preview">BOOK PREVIEW</Link>
           </div>
           <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
-            <Link href="https://amzn.eu/d/3alSDGp" passHref={true}>SHOP</Link>
+            <Link href="https://amzn.eu/d/3alSDGp" passHref={true}>SHOP (India)</Link>
+          </div>
+          <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
+            <Link href="https://a.co/d/8Ym4OfE" passHref={true}>SHOP (International)</Link>
           </div>
           <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
             <Link href="/form">CONTACT</Link>
@@ -96,7 +99,13 @@ export default function Home() {
 
             <Link href="https://amzn.eu/d/3alSDGp" passHref={true}>
               <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg col-span-2 bg-white/10 cursor-pointer hover:bg-black/20">
-                SHOP
+                SHOP (India)
+              </div>
+            </Link>
+            <div></div>
+            <Link href="https://a.co/d/8Ym4OfE" passHref={true}>
+              <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg col-span-2 bg-white/10 cursor-pointer hover:bg-black/20">
+                SHOP (International)
               </div>
             </Link>
             <div></div>
