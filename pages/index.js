@@ -1,7 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="small-home min-h-screen">
       <div className="lg:hidden grid  grid-cols-1 min-w-max justify-items-center  small-home ">
@@ -48,11 +51,47 @@ export default function Home() {
           <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
             <Link href="/preview">BOOK PREVIEW</Link>
           </div>
+          {!open && (
+            <div
+              onClick={() => {
+                setOpen(!open);
+              }}
+              className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10"
+            >
+              Shop (India)
+            </div>
+          )}
+          {open && (
+            <div
+              onClick={() => {
+                setOpen(!open);
+              }}
+              className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10"
+            >
+              <Link href="https://amzn.eu/d/3alSDGp" passHref={true}>
+                Amazon
+              </Link>
+            </div>
+          )}
+          {open && (
+            <div
+              onClick={() => {
+                setOpen(!open);
+              }}
+              className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10"
+            >
+              <Link
+                href="https://www.flipkart.com/search?q=INNO%20WAITING%3F&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+                passHref={true}
+              >
+                Flipkart
+              </Link>
+            </div>
+          )}
           <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
-            <Link href="https://amzn.eu/d/3alSDGp" passHref={true}>SHOP (India)</Link>
-          </div>
-          <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
-            <Link href="https://a.co/d/8Ym4OfE" passHref={true}>SHOP (International)</Link>
+            <Link href="https://a.co/d/8Ym4OfE" passHref={true}>
+              SHOP (International)
+            </Link>
           </div>
           <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg bg-white/10">
             <Link href="/form">CONTACT</Link>
@@ -97,11 +136,44 @@ export default function Home() {
             </Link>
             <div></div>
 
-            <Link href="https://amzn.eu/d/3alSDGp" passHref={true}>
-              <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg col-span-2 bg-white/10 cursor-pointer hover:bg-black/20">
-                SHOP (India)
+            {!open && (
+              <div
+                onClick={() => {
+                  setOpen(!open);
+                }}
+                className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg col-span-2 bg-white/10 cursor-pointer hover:bg-black/20"
+              >
+                Shop (India)
               </div>
-            </Link>
+            )}
+            {open && (
+              <div
+                onClick={() => {
+                  setOpen(!open);
+                }}
+                className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg col-span-2 bg-white/10 cursor-pointer hover:bg-black/20"
+              >
+                <Link href="https://amzn.eu/d/3alSDGp" passHref={true}>
+                  Amazon
+                </Link>
+              </div>
+            )}
+            {open && <div></div>}
+            {open && (
+              <div
+                onClick={() => {
+                  setOpen(!open);
+                }}
+                className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg col-span-2 bg-white/10 cursor-pointer hover:bg-black/20"
+              >
+                <Link
+                  href="https://www.flipkart.com/search?q=INNO%20WAITING%3F&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"
+                  passHref={true}
+                >
+                  Flipkart
+                </Link>
+              </div>
+            )}
             <div></div>
             <Link href="https://a.co/d/8Ym4OfE" passHref={true}>
               <div className="backdrop-opacity-10 backdrop-invert p-2 rounded-lg shadow-lg col-span-2 bg-white/10 cursor-pointer hover:bg-black/20">
